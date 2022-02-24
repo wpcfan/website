@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Foundation",
+    "title": "TwigCodes",
     "titleTemplate": "%s",
-    "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
+    "description": "TwigCodes provides solutions on Office Automation, Smart Home, and E-commerce",
     "siteUrl": "https://foundation.stackrole.com",
-    "image": "/assets/stackrole.png",
-    "iconimage": "/assets/stackrole.png",
-    "twitterUsername": "@stackrole"
+    "image": "/assets/TwigCodes-logos_transparent.png",
+    "iconimage": "/assets/TwigCodes-logos_transparent.png",
+    "twitterUsername": "@wpcfan"
   },
   "ga": "UA-XXXXXXXXX-X"
 }

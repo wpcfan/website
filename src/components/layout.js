@@ -16,6 +16,7 @@ const query = graphql`
     site {
       siteMetadata {
         siteTitle: title
+        siteImage: iconimage
       }
     }
     siteSearchIndex {
@@ -26,12 +27,12 @@ const query = graphql`
 
 const Layout = ({ children, className, props }) => {
   const { site, siteSearchIndex } = useStaticQuery(query)
-  const { siteTitle } = site.siteMetadata
+  const { siteImage, siteTitle } = site.siteMetadata
 
   return (
     <div className="primary-container">
       <Header>
-        <Logo title={siteTitle} />
+        <Logo src={siteImage} title={siteTitle} />
         <div sx={layoutStyle.nav}>
           <div sx={{ display: ["flex", "flex", "flex", "none"] }}>
             <Search searchIndex={siteSearchIndex.index} />

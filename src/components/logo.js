@@ -1,9 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 
 const Logo = props => (
   <div className="site-logo">
-    <Link to="/">{props.title}</Link>
+    <img src={props.src} alt={props.title} width="128" height="64" style={{ "objectFit": "cover" }} />
   </div>
 )
 

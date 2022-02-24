@@ -51,25 +51,25 @@ const Contact = ({ data }) => {
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>
-              Name
+              姓名
               <input type="text" name="name" required />
             </label>
           </p>
           <p>
             <label>
-              Email
+              电子邮箱
               <input type="email" name="email" required />
             </label>
           </p>
           <p>
             <label>
-              Subject
+              主题
               <input type="text" name="subject" required />
             </label>
           </p>
           <p>
             <label>
-              Message<textarea name="message" required></textarea>
+              描述<textarea name="message" required></textarea>
             </label>
           </p>
           <p className="text-align-right">
@@ -80,7 +80,7 @@ const Contact = ({ data }) => {
               }}
               type="submit"
             >
-              Send Message{" "}
+              发送{" "}
               <span className="icon -right">
                 <RiSendPlane2Line />
               </span>

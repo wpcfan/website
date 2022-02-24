@@ -1,12 +1,12 @@
 ---
 template: index-page
 slug: /
-title: Wyatt Morriss
-tagline: Graphic Designer
+title: 科技创新，伴您左右
+tagline: 推码科技
 featuredImage: /assets/toa-heftiba-0rlfirsdvzu-unsplash.jpg
 cta:
-  ctaText: Know more
+  ctaText: 了解更多
   ctaLink: /about
 ---
 
-He is a award winning gaming graphic designer, based in sunny side of California. Working as Principal designer at Bethesda
+推码科技追求把最新的科技以最自然的方式融入您的生活，提升您的生产效率

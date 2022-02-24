@@ -39,6 +39,12 @@ module.exports = {
         plugins: [
           netlifyCmsPaths,
           {
+            resolve: "gatsby-remark-copy-linked-files",
+            options: {
+              destinationDir: "static",
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1024,
@@ -98,8 +104,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Foundation`,
-        short_name: `Foundation`,
+        name: `TwigCodes`,
+        short_name: `TwigCodes`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,

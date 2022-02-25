@@ -1,22 +1,22 @@
 version: "3.8"
 
 services:
-  gatsby:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    entrypoint: gatsby
-    ports:
-      - "8000:8000"
+  website:
+    image: nginx
     volumes:
-      - .:/app
+      - ./public:/usr/share/nginx/html
+    ports:
+      - "8100:80"
+    environment:
+      - VIRTUAL_HOST=twigcodes.com
+      - LETSENCRYPT_HOST=twigcodes.com
+      - VIRTUAL_PORT=8100
+    networks:
+      - local
+      - default
 
-  develop:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    command: gatsby develop -H 0.0.0.0
-    ports:
-      - "8000:8000"
-    volumes:
-      - .:/app
+networks:
+  local:
+    driver: bridge
+  default:
+    name: proxy

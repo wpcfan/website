@@ -38,7 +38,7 @@ const Pagination = props => (
               <span className="icon -left">
                 <RiArrowLeftLine />
               </span>{" "}
-              Previous
+              前一页
             </p>
             <span className="page-title">
               {props.previous.frontmatter.title}
@@ -54,7 +54,7 @@ const Pagination = props => (
                 color: "muted",
               }}
             >
-              Next{" "}
+              下一页{" "}
               <span className="icon -right">
                 <RiArrowRightLine />
               </span>
@@ -95,7 +95,7 @@ const Post = ({ data, pageContext }) => {
         <header className="featured-banner">
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
-            <time sx={{color: "muted"}}>{frontmatter.date}</time>
+            <time sx={{ color: "muted" }}>{frontmatter.date}</time>
           </section>
           {Image ? (
             <GatsbyImage

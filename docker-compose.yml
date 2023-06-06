@@ -5,18 +5,15 @@ services:
     image: nginx
     volumes:
       - ./public:/usr/share/nginx/html
+      - ./.well-known:/usr/share/nginx/html/.well-known
     ports:
       - "8100:80"
     environment:
       - VIRTUAL_HOST=twigcodes.com
       - LETSENCRYPT_HOST=twigcodes.com
-      - VIRTUAL_PORT=8100
     networks:
-      - local
-      - default
+      - proxy
 
 networks:
-  local:
-    driver: bridge
-  default:
-    name: proxy
+  proxy:
+    external: true

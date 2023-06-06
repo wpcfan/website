@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["U4F2KFJUHF.com.twigcodes.MyAIKeyboard"],
+        "components": [
+          {
+            "/": "/link/*",
+            "comment": "Universal links"
+          },
+          {
+            "/": "/help/*",
+            "exclude": true
+          }
+        ]
+      }
+    ]
+  }
+}

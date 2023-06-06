@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   website:
-    image: nginx
+    image: nginx:1.23
     volumes:
       - ./public:/usr/share/nginx/html
       - ./.well-known:/usr/share/nginx/html/.well-known
